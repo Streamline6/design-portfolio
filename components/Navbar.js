@@ -29,14 +29,14 @@ function Navbar() {
 										Home
 									</Link>
 									<Link
-										activeClass="Skill"
-										to="Skill"
+										activeClass="services"
+										to="services"
 										smooth={true}
 										offset={50}
 										duration={500}
 										className="cursor-pointer hover:text-blue-600 text-black  px-3 py-2"
 									>
-										Skill
+										Services
 									</Link>
 									<Link
 										activeClass="work"
@@ -79,11 +79,11 @@ function Navbar() {
 								</h1>
 							</div>
 						</div>
-						<div className="mr-10 flex md:hidden ">
+						<div className="mr-14 flex md:hidden ">
 							<button
 								onClick={() => setIsOpen(!isOpen)}
 								type="button"
-								className="bg-blue-600 inline-flex items-center justify-center p-2 rounded-md text-white  hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-blue-800 focus:ring-white"
+								className="bg-blue-600 inline-flex items-center justify-center p-2 rounded-md text-white  hover:bg-black focus:outline-none focus:ring-white"
 								aria-controls="mobile-menu"
 								aria-expanded="false"
 							>
@@ -139,7 +139,7 @@ function Navbar() {
 						<div className="md:hidden" id="mobile-menu">
 							<div
 								ref={ref}
-								className="bg-white px-2 pt-2 pb-3 space-y-1 sm:px-3"
+								className="bg-white mx-4 mr-20 pt-4 pb-4 space-y-1"
 							>
 								<Link
 									href="/home"
@@ -153,15 +153,15 @@ function Navbar() {
 									Home
 								</Link>
 								<Link
-									href="/Skill"
-									activeClass="Skill"
-									to="Skill"
+									href="/services"
+									activeClass="services"
+									to="services"
 									smooth={true}
 									offset={50}
 									duration={500}
 									className="cursor-pointer hover:bg-blue-600 text-black hover:text-white block px-3 py-2 rounded-md text-base font-medium"
 								>
-									Skill
+									Services
 								</Link>
 
 								<Link
